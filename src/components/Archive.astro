@@ -1,0 +1,68 @@
+---
+const data = [
+    {
+        heading: "3D Shoe Modelling",
+        subheading: "Prototyping I 3D Modelling",
+        image: "/images/archive/3dshoes.png",
+    },
+    {
+        heading: "Khadi India Website Redesign",
+        subheading: "Interface Design I Redesigning",
+        image: "/images/archive/khadiindia.png",
+    },
+    {
+        heading: "Lamp Designing",
+        subheading: "Product Design I Prototyping",
+        image: "/images/archive/floret.png",
+    },
+    {
+        heading: "UX Laws Application",
+        subheading: "21 Laws of UX I Research ",
+        image: "/images/archive/lawsofux.png",
+    },
+    {
+        heading: "Brand Analysis",
+        subheading: "UX Research I Brand Identity",
+        image: "/images/archive/theobroma.png",
+    },
+    {
+        heading: "Visual Design",
+        subheading: "Graphic Design I Print Media",
+        image: "/images/archive/visualdesign.png",
+    },
+    {
+        heading: "Watch Design",
+        subheading: "Problem Solving I User Experience",
+        image: "/images/archive/watchdesign.png",
+    },
+    {
+        heading: "Coming Soon",
+        subheading: "Visual Design I Research",
+        image: "/images/archive/comingsoon.png",
+    },
+];
+---
+
+<section class="w-4/5 max-w-[1400px] mx-auto items-center min-h-screen mt-28">
+    <h1 class="text-white mb-16">Archive</h1>
+    <div class="w-full grid grid-cols-2 gap-24">
+        {
+            data.map((item) => (
+                <div class="flex flex-col gap-5">
+                    <h2 class="text-white font-voyage text-4xl">
+                        {item.heading}
+                    </h2>
+                    <a href="/" class="w-full aspect-video rounded-lg">
+                        <img
+                            src={item.image}
+                            class="object-cover aspect-video w-full rounded-lg hover:scale-105 transition-all cursor-pointer duration-300"
+                        />
+                    </a>
+                    <h4 class="text-2xl text-gray font-mont">
+                        {item.subheading}
+                    </h4>
+                </div>
+            ))
+        }
+    </div>
+</section>
