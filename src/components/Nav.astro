@@ -1,20 +1,21 @@
----
-export interface Props {
-    theme: String;
-}
-const { theme } = Astro.props;
----
-
 <nav
     class="flex justify-between items-center w-4/5 max-w-[1400px] mx-auto absolute top-10 left-1/2 -translate-x-1/2"
 >
-    <a class="font-voyage text-5xl">
-        <span class="text-pink"> Urvi</span>
+    <a class="font-voyage text-4xl 2xl:text-5xl" href="/">
+        <span class="text-pink puzzle-together"> Urvi</span>
         <span class="text-white"> Suhane</span>
     </a>
-    <div class="text-pink font-mont flex gap-10 font-bold text-xl">
+    <div
+        class="text-pink font-mont flex gap-10 font-bold text-md 2xl:text-xl puzzle-together"
+    >
         <a href="/">WORK</a>
         <a href="/">RESUME</a>
         <a href="/">CONTACT ME</a>
     </div>
 </nav>
+
+<style>
+    body.bg-pink .puzzle-together {
+        @apply text-black transition-all duration-300;
+    }
+</style>

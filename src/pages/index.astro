@@ -9,7 +9,7 @@ import Archive from "../components/Archive.astro";
 ---
 
 <Layout title="Welcome to Urvi">
-    <Nav theme={"dark"} />
+    <Nav />
     <Banner />
     <Projects />
     <Archive />
@@ -23,9 +23,8 @@ import Archive from "../components/Archive.astro";
         max-width: 60ch;
     }
     h1 {
-        font-size: 3rem;
         font-weight: 800;
-        margin: 0;
+        @apply text-xl xl:text-5xl;
     }
     .text-gradient {
         background-image: var(--accent-gradient);

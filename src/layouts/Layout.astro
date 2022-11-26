@@ -15,7 +15,7 @@ const { title } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body class="py-10">
+    <body class="py-10 transition-all duration-300">
         <slot />
     </body>
 </html>
@@ -45,6 +45,6 @@ const { title } = Astro.props;
         height: 100px;
     }
     h1 {
-        @apply text-8xl font-voyage;
+        @apply text-7xl 2xl:text-8xl font-voyage;
     }
 </style>
