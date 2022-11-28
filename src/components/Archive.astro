@@ -4,41 +4,49 @@ const data = [
         heading: "3D Shoe Modelling",
         subheading: "Prototyping I 3D Modelling",
         image: "/images/archive/3dshoes.png",
+        link: "https://www.behance.net/gallery/144866571/3D-Modelling-Converse-High-Tops",
     },
     {
         heading: "Khadi India Website Redesign",
         subheading: "Interface Design I Redesigning",
         image: "/images/archive/khadiindia.png",
+        link: "https://drive.google.com/file/d/1CcoM0grpPgc1iDt4FGxh1zPtpLqf8s9c/view?usp=sharing",
     },
     {
         heading: "Lamp Designing",
         subheading: "Product Design I Prototyping",
         image: "/images/archive/floret.png",
+        link: "https://drive.google.com/file/d/1XG0EYVx8g7vQY_nrNZ-0OgY0yLbpu5CB/view?usp=sharing",
     },
     {
         heading: "UX Laws Application",
         subheading: "21 Laws of UX I Research ",
         image: "/images/archive/lawsofux.png",
+        link: "https://drive.google.com/file/d/1dwIaYRdLMo-BW6_pqtdJ8RzvI8thThXl/view?usp=sharing",
     },
     {
         heading: "Brand Analysis",
         subheading: "UX Research I Brand Identity",
         image: "/images/archive/theobroma.png",
+        link: "https://drive.google.com/file/d/1ec5vxhSoEOgLVCHd8NQmOuryYaBR8g17/view?usp=sharing",
     },
     {
         heading: "Visual Design",
         subheading: "Graphic Design I Print Media",
         image: "/images/archive/visualdesign.png",
+        link: "https://drive.google.com/file/d/1XG0EYVx8g7vQY_nrNZ-0OgY0yLbpu5CB/view?usp=sharing",
     },
     {
         heading: "Watch Design",
         subheading: "Problem Solving I User Experience",
         image: "/images/archive/watchdesign.png",
+        link: "https://drive.google.com/file/d/1vBAz3KWxMiQGwW6aN5m98Sue0O5uIPz8/view?usp=sharing",
     },
     {
         heading: "Coming Soon",
         subheading: "Visual Design I Research",
         image: "/images/archive/comingsoon.png",
+        link: "/",
     },
 ];
 ---
@@ -54,7 +62,11 @@ const data = [
                     <h2 class="text-white font-voyage text-2xl sm:text-4xl truncate">
                         {item.heading}
                     </h2>
-                    <a href="/" class="w-full aspect-video rounded-lg">
+                    <a
+                        href={item.link}
+                        class="w-full aspect-video rounded-lg"
+                        target="_blank"
+                    >
                         <img
                             src={item.image}
                             class="object-cover aspect-video w-full rounded-lg hover:scale-105 transition-all cursor-pointer duration-300"
