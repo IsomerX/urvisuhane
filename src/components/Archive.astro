@@ -43,13 +43,15 @@ const data = [
 ];
 ---
 
-<section class="w-4/5 max-w-[1400px] mx-auto items-center min-h-screen mt-28">
-    <h1 class="text-white mb-16">Archive</h1>
-    <div class="w-full grid grid-cols-2 gap-24">
+<section
+    class="px-5 sm:w-4/5 sm:px-0 max-w-[1400px] mx-auto items-center min-h-screen mt-28"
+>
+    <h1 class="text-white mb-8 sm:mb-16">Archive</h1>
+    <div class="w-full grid grid-cols-2 gap-5 sm:gap-24">
         {
             data.map((item) => (
-                <div class="flex flex-col gap-5">
-                    <h2 class="text-white font-voyage text-4xl">
+                <div class="flex flex-col gap-5 w-full">
+                    <h2 class="text-white font-voyage text-2xl sm:text-4xl truncate">
                         {item.heading}
                     </h2>
                     <a href="/" class="w-full aspect-video rounded-lg">
@@ -58,7 +60,7 @@ const data = [
                             class="object-cover aspect-video w-full rounded-lg hover:scale-105 transition-all cursor-pointer duration-300"
                         />
                     </a>
-                    <h4 class="text-gray font-mont text-2xl 2xl:text-3xl">
+                    <h4 class="text-gray font-mont text-md sm:text-2xl 2xl:text-3xl">
                         {item.subheading}
                     </h4>
                 </div>
