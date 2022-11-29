@@ -23,7 +23,7 @@ const { title } = Astro.props;
         />
         <title>{title}</title>
     </head>
-    <body class="py-10 transition-all duration-300">
+    <body class="pb-10 md:py-10 transition-all duration-300">
         <slot />
     </body>
 </html>
@@ -55,7 +55,7 @@ const { title } = Astro.props;
         height: 100px;
     }
     h1 {
-        @apply text-[2.8rem] md:text-7xl 2xl:text-8xl font-voyage;
+        @apply text-4xl md:text-7xl 2xl:text-8xl font-voyage;
     }
     body.bg-pink h2 {
         @apply text-black !important;
