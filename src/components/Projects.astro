@@ -1,7 +1,7 @@
 ---
 const data = [
     {
-        heading: "Annapurna - The Food Donation App",
+        heading: "Annapurna",
         subheading: "UX Research I Interface Design",
         description:
             "Annapurna is a food donation app that connects people who want to donate food with people who need food. It is a platform for people to donate food to the needy and also to help the needy to find food. It is a platform for people to donate food to the needy and also to help the needy to find food.",
@@ -35,23 +35,21 @@ const data = [
         {
             data.map((project, idx) => {
                 return (
-                    <div
+                    <a
+                        href={project.link}
                         class={`flex justify-between items-center flex-col gap-5 md:gap-0 ${
                             idx % 2 === 1
                                 ? "md:flex-row-reverse md:text-right"
                                 : "md:flex-row"
                         }`}
+                        target="_blank"
                     >
-                        <a
-                            href={project.link}
-                            class="md:w-5/12 aspect-video rounded-lg"
-                            target="_blank"
-                        >
+                        <div class="md:w-5/12 aspect-video rounded-lg">
                             <img
                                 src={project.image}
                                 class="object-cover h-full w-full rounded-lg hover:scale-105 transition-all cursor-pointer duration-300"
                             />
-                        </a>
+                        </div>
                         <div class="font-mont w-full md:w-6/12 flex flex-col gap-2 ">
                             <h2 class="font-voyage text-4xl md:text-5xl 2xl:text-6xl text-pink">
                                 {project.heading}
@@ -63,7 +61,7 @@ const data = [
                                 {project.description}
                             </p>
                         </div>
-                    </div>
+                    </a>
                 );
             })
         }
